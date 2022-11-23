@@ -1,0 +1,170 @@
+body{
+    background-color: antiquewhite;
+}
+main{
+    background-image: url(images/photo.jpg);
+    background-position: bottom;
+}
+
+header{
+    background-color: black;
+}
+.en_tete{
+    margin: 50px;
+}
+
+.en_tete ul{
+    display: flex;
+    justify-content: space-evenly;
+    height: 46px;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+section{
+    padding: 30px 100px;
+}
+.logo img{
+    position: absolute;
+    left: 97px;
+    top: -8px;
+}
+.images {    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.image1{
+    display: flex;
+}
+.image1 img{
+    margin-top: 35px;
+    width: 100%;
+}
+.image2{    
+    width: 100%;
+    height: 500px;
+    display: block;
+    position: relative;
+}
+.image2 img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.B_vert1{
+    background-color: aqua;
+    display: flex;
+}
+.B_vert2{
+    background-color: burlywood;
+    display: flex;
+    height: 190px;
+    color: darkblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.B_vert2 p{
+    font-size: 18px;
+    text-indent: 6%;
+}
+.B_vert2 h2{
+    width: 560px;
+}
+.logo_FB{
+     
+    background-color: burlywood;
+    width:38vw;
+    margin: 20px;
+    padding: 20px;
+    height: 340px;
+    border-radius: 30px;
+}
+.logo_FB a{
+    width: 215px;
+    position: absolute;
+    left: 205px;
+}
+.logo_FB img{
+    width: 40px;
+    position: absolute;
+    left: -52px;
+    top: 21px;
+}
+main section:nth-child(2) {
+    background: transparent;
+    display: flex;
+    height: 400px;
+}
+#des_logos{
+    background-color: chocolate;     
+    width:  26vw;
+    margin: 20px;
+    padding: 20px;
+    height: 340px;
+    border-radius: 30px;
+    color: darkblue;
+}
+#des_logos h2{
+    position: absolute;
+    left:  41vw;
+}
+div#des_logos img{
+    width: 80px;
+    border-radius: 10px;
+}
+#video{
+    background-color: burlywood;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    height: 340px;
+    border-radius: 30px;
+}
+#match{
+    position: absolute;
+    left: 40vw;
+    top: 104vw;
+}
+#video img{
+    width: 300px;
+}
+#video h2{
+    color: darkblue;
+    text-align: center;
+}
+footer{
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+}
+
+
+@keyframes changeurImages {
+    0% {
+        background-image: url("images/image2.jpg");
+    }
+    33% {
+        background-image: url("images/photo2.jpg");
+    }
+    66% {
+        background-image: url("images/photo3.jpg");
+    }
+    100% {
+        background-image: url("images/image2.jpg");
+    }
+    
+
+}
+
+#imageViewer {
+    width: 100%;
+    height: 100%;
+    animation: changeurImages 10s ease-in-out 0s infinite;
+    animation-direction: alternate;
+}
